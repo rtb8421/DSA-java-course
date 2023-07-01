@@ -2,7 +2,7 @@ package Lec19;
 
 public class Insertion_Sort {
     public static void main(String[] args) {
-        int [] arr = {5,3,-7,4,8,2};
+        int [] arr = {3,4,2,1};
         Display(arr);
         insertionSort(arr);
         Display(arr);
