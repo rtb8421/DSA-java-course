@@ -8,7 +8,6 @@ public class StringBuffer {
         // Create a StringBuffer object
         StringBuffer stringBuffer = new StringBuffer("Hello, World!");
 
-        // Append text to the StringBuffer
         stringBuffer.append(" Welcome to Java.");
 
         // Insert text at a specific position

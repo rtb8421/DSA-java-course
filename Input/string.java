@@ -1,62 +1,31 @@
 package Input;
 public class string {
-        public static void main(String[] args) {
-            String text = "Rohan Patel";
-            System.out.println("Original String: " + text);
+    public static void main(String[] args) {
+        String s1 = "Rohan Patel";
+        String s2 = s1.toUpperCase();
+        String s3 = s2.toLowerCase();
 
-            System.out.println("Length of the string: " + text.length());
+        System.out.println(s2 + "\n" + s3);
+        System.out.println(s1.replace('e', 'a'));
 
-            char charAtIndex = text.charAt(4);
-            System.out.println("Character at index 4: " + charAtIndex);
+        String s4 = "RTB";
+        System.out.println("Length of s4 =" +s4.length() + "\n length of trimmed s4 = " + s4.trim().length());
 
-            int indexOfN = text.indexOf('n');
-            System.out.println("Index of 'n': " + indexOfN);
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.equalsIgnoreCase(s2));
+        System.out.println("Character at 6th index is :" + s1.charAt(6));
+        System.out.println(s1.compareTo(s3));
+        System.out.println(s4.concat(s1));
+        System.out.println(s1.substring(6));
+        System.out.println(s1.substring(0, 5));
 
-            String substring = text.substring(7);
-            System.out.println("Substring from index 7: " + substring);
+        Object object = null;
+        Object object1 = object;
+        int ob = 31;
 
-            String lowercaseText = text.toLowerCase();
-            System.out.println("Lowercase text: " + lowercaseText);
-
-            String uppercaseText = text.toUpperCase();
-            System.out.println("Uppercase text: " + uppercaseText);
-
-            String stringWithSpaces = "    Rohan Patel    ";
-            String trimmedText = stringWithSpaces.trim();
-            System.out.println("Trimmed text: " + trimmedText);
-
-            boolean startsWithRohan = text.startsWith("Rohan");
-            System.out.println("Starts with 'Rohan': " + startsWithRohan);
-
-            boolean endsWithPatel = text.endsWith("patel");
-            System.out.println("Ends with 'patel': " + endsWithPatel);
-
-            String replacedText = text.replace("Rohan", "RTB");
-            System.out.println("Replaced text: " + replacedText);
-
-            boolean containsRohan = text.contains("Rohan");
-            System.out.println("Contains 'Rohan': " + containsRohan);
-
-            String[] splitText = text.split("RTB ");
-            System.out.println("Split text: ");
-            for (String word : splitText) {
-                System.out.println(word);
-            }
-
-            String emptyString = "";
-            System.out.println("Is the string empty? " + emptyString.isEmpty());
-
-            String compareString = "Rohan Patel";
-            int compareToResult = text.compareTo(compareString);
-            System.out.println("Compare to 'Rohan Patel': " + compareToResult);
-
-            boolean isEqual = text.equals(compareString);
-            System.out.println("Is equal to 'Rohan Patel': " + isEqual);
-
-            String concatenatedText = text.concat("RTB");
-            System.out.println("Concatenated text: " + concatenatedText);
-
-            String internedString = text.intern();
-            System.out.println("Interned string: " + internedString);
-        }
+        System.out.println("after using value()" + ob + "belongs to =" + String.valueOf(ob).getClass());
+        System.out.println(s1.indexOf("n"));
+        System.out.println(s1.indexOf('n', 6));
     }
+}
+
